@@ -1,4 +1,4 @@
-#07.7/2025 Build - Working Sonify # app.py - Final Production Version (Corrected with Robust Audio Generation and Script Cleaning)
+# app.py - Final Production Version (Corrected with Robust Audio Generation and Script Cleaning)
 
 import os
 import uuid
@@ -274,3 +274,4 @@ def get_podcast_status(job_id):
         return jsonify({"error": f"An error occurred: {e}"}), 500
 
 if __name__ == '__main__':
+    app.run(debug=True, port=5000)
